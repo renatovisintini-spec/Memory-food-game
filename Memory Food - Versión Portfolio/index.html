@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Memory Food, juego de memoria desarrollado con HTML, CSS y JavaScript.">
+  <title>Memory Food | Juego de memoria</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Memory Food</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="login.html">Iniciar sesión</a>
+      <a class="button button--small" href="registro.html">Registrarse</a>
+    </nav>
+  </header>
+
+  <main class="hero shell">
+    <section class="hero__content" aria-labelledby="hero-title">
+      <p class="eyebrow">HTML · CSS · JavaScript · LocalStorage</p>
+      <h1 id="hero-title">Juego de memoria de comidas</h1>
+      <p class="hero__lead">Encuentra las 8 parejas, intenta cometer la menor cantidad de errores y mejora tu tiempo.</p>
+      <div class="hero__actions">
+        <a class="button" href="login.html">Jugar</a>
+        <a class="button button--ghost" href="ranking.html">Ver ranking</a>
+      </div>
+      <p class="note">Proyecto frontend educativo. El registro y el login se simulan en el navegador mediante LocalStorage.</p>
+    </section>
+
+    <section class="preview-card" aria-label="Resumen del juego">
+      <div class="preview-card__grid" aria-hidden="true">
+        <span>🍚</span><span>🥚</span><span>🥗</span><span>🥩</span>
+        <span>🧅</span><span>🍰</span><span>🥟</span><span>🍖</span>
+      </div>
+      <div class="preview-card__stats">
+        <div><strong>16</strong><span>tarjetas</span></div>
+        <div><strong>8</strong><span>parejas</span></div>
+        <div><strong>1</strong><span>objetivo</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>Memory Food · Proyecto de portfolio junior</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Partida de Memory Food.">
+  <title>Jugar | Memory Food</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Memory Food</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <span id="player-name" class="player-chip"></span>
+      <a href="ranking.html">Ranking</a>
+      <button id="logout-button" class="link-button" type="button">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <main class="shell game-page">
+    <section class="game-heading">
+      <div>
+        <p class="eyebrow">Encuentra las parejas</p>
+        <h1>Juego de tarjetas de comidas</h1>
+        <p>Selecciona dos tarjetas. Si coinciden, permanecerán abiertas. Completa las 8 parejas con el menor número de errores posible.</p>
+      </div>
+      <button id="restart-button" class="button button--ghost" type="button">Nueva partida</button>
+    </section>
+
+    <section class="stats" aria-label="Estado de la partida">
+      <div class="stat-card"><span>Tiempo</span><strong id="time">00:00</strong></div>
+      <div class="stat-card"><span>Errores</span><strong id="errors">0</strong></div>
+      <div class="stat-card"><span>Parejas</span><strong><span id="matches">0</span>/8</strong></div>
+    </section>
+
+    <p id="game-message" class="game-message" role="status" aria-live="polite">Haz clic en una tarjeta para comenzar.</p>
+
+    <section id="game-board" class="game-board" aria-label="Tablero de 16 tarjetas"></section>
+
+    <section id="result-panel" class="panel result-panel" hidden>
+      <p class="eyebrow">Partida completada</p>
+      <h2>¡Enhorabuena, <span id="result-name"></span>!</h2>
+      <p>Terminaste con <strong id="result-errors"></strong> errores en <strong id="result-time"></strong>.</p>
+      <div class="result-actions">
+        <button id="play-again-button" class="button" type="button">Jugar otra vez</button>
+        <a class="button button--ghost" href="ranking.html">Ver ranking</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/juego.js"></script>
+</body>
+</html>

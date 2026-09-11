@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ranking de Memory Food.">
+  <title>Ranking | Memory Food</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Memory Food</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="juego.html">Jugar</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="shell ranking-page">
+    <section class="page-heading">
+      <p class="eyebrow">Resultados guardados en este navegador</p>
+      <h1>Ranking</h1>
+      <p>Se prioriza menor cantidad de errores; en caso de empate, gana el menor tiempo.</p>
+    </section>
+
+    <section class="ranking-grid">
+      <article class="panel">
+        <div class="panel__heading panel__heading--compact">
+          <h2>Por jugador</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Jugador</th><th>Ciudad</th><th>Errores</th><th>Tiempo</th></tr></thead>
+            <tbody id="player-ranking"></tbody>
+          </table>
+        </div>
+        <p id="player-empty" class="empty-state" hidden>Aún no hay partidas registradas.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel__heading panel__heading--compact">
+          <h2>Por ciudad</h2>
+          <p>Mejor resultado individual registrado en cada ciudad.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Ciudad</th><th>Jugador</th><th>Errores</th><th>Tiempo</th></tr></thead>
+            <tbody id="city-ranking"></tbody>
+          </table>
+        </div>
+        <p id="city-empty" class="empty-state" hidden>Aún no hay ciudades en el ranking.</p>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="js/ranking.js"></script>
+</body>
+</html>
